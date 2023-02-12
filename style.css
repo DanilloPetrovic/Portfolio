@@ -1,16 +1,16 @@
 @font-face {
     font-family: Monrope;
-    src: url(../fonts/Manrope-VariableFont_wght.ttf);
+    src: url(fonts/Manrope-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: QuickSand;
-    src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+    src: url(fonts/Quicksand-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: OpenSans;
-    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 *{
