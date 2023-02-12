@@ -1,0 +1,471 @@
+@font-face {
+    font-family: Monrope;
+    src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: QuickSand, sans-serif;
+}
+
+/* Header */
+
+header{
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    box-shadow: 0px 0px 3px;
+    color: grey;
+}
+
+.logo-header{
+    font-weight: bold;
+    font-family: OpenSans, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ul-header{
+    list-style: none;
+    display: flex;
+}
+
+.navbar-header-div{
+    cursor: pointer;
+    display: block;
+}
+
+.ul-header li{
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.ul-header li:hover{
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+.button-for-responsive-navbar{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-for-responsive-navbar:hover{
+    transform: scale(1.1);
+}
+
+.responsive-header{
+    background-color: rgb(235, 235, 235);
+    color: black;
+    display: none;
+}
+
+.li-responsive-header{
+    padding: 20px;
+    font-size: 22px;
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.li-responsive-header:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+/* Main */
+
+/* Section One */
+
+.section-one-main{
+    padding: 100px;
+}
+
+.section-one-h1{
+    font-family: OpenSans, serif;
+    font-size: 65px;
+    cursor: default;
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-one-h1-fade{
+    opacity: 1;
+}
+
+/* Section Two */
+
+.section-two-main{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.section-two-h2{
+    font-size: 45px;
+    font-family: OpenSans, serif;
+    cursor: default;
+}
+
+.about-text-photo{
+    display: flex;
+}
+
+.section-two-p{
+    font-size: 22px;
+    width: 80%;
+    margin-top: 30px;
+    cursor: default;
+}
+
+.section-two-photo{
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+    border: 3px solid rgb(215, 215, 215);
+    margin-top: 100px;
+    cursor: default;
+    transition: 0.5s;
+}
+
+.section-two-photo:hover{
+    transform: scale(1.03);
+}
+
+/* Section three */
+
+.section-three-main{
+    padding: 100px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    cursor: default;
+}
+
+.section-three-h2{
+    font-size: 45px;
+    font-family: OpenSans, serif;
+    cursor: default;
+}
+
+.section-three-project-one{
+    width: 33%;
+    color: grey;
+    box-shadow: 0px 0px 10px;
+    padding: 50px;
+    margin-top: 100px;
+    border-radius: 10px;
+    transform: translateX(-200%);
+    transition: 2s;
+}
+
+.section-three-project-one-fade{
+    transform: translateX(0%);
+}
+
+.section-three-switch{
+    width: 100%;
+    color: grey;
+    box-shadow: 0px 0px 5px;
+}
+
+.section-three-h3{
+    color: black;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.section-three-project-one-p{
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.section-three-project-one-button{
+    margin-top: 30px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section-three-project-one-button:hover{
+    color: black;
+    background-color: transparent;
+}
+
+/* Section four */
+
+.section-four-main{
+    background-color: #28282A;
+    padding: 100px;
+    padding-top: 80px;
+    color: white;
+}
+
+.section-four-h2{
+    color: white;
+    font-size: 45px;
+    font-family: OpenSans, serif;
+    cursor: default;
+}
+
+.section-four-p{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.section-four-inputs-div{
+    margin-top: 50px;
+}
+
+.section-four-input-name-email{
+    display: flex;
+    justify-content: center;
+}
+
+.input-name, .input-email{
+    width: 30%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.input-email{
+    margin-left: 10px;
+}
+
+.input-message{
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 10px;
+    width: 62.5%;
+    border: none;
+    height: 300px;
+}
+
+.section-four-button{
+    border: none;
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section-four-button:hover{
+    background-color: rgb(232, 232, 232);
+}
+
+/* Footer */
+
+footer{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.footer-h1{
+    font-family: OpenSans, serif;
+    cursor: default;
+}
+
+.footer-p{
+    font-size: 22px;
+}
+
+.footer-icons{
+    margin-top: 10px;
+}
+
+.footer-icons i{
+    color: black;
+}
+
+.fa-github{
+    margin-left: 5px;
+}   
+
+/* Responsive */
+
+@media screen and (max-width: 1250px) {
+    .section-one-h1{
+        font-size: 55px;
+    }
+
+    .section-two-photo{
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .about-text-photo{
+        display: block;
+    }
+
+    .section-two-photo-div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-message{
+        width: 65%;
+    }
+
+    .section-three-project-one{
+        margin-top: 100px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .navbar-header-div{
+        display: none;
+    }
+
+    .button-for-responsive-navbar{
+        display: block;
+    }
+
+    .section-one-h1{
+        font-size: 50px;
+    }
+
+    .section-two-p{
+        width: 90%;
+    }
+
+    .section-three-h2{
+        height: 50px;
+    }
+
+    .section-three-main{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .section-three-project-one{
+        margin-top: 100px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section-one-h1{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .section-one-h1{
+        font-size: 45px;
+    }
+
+    .section-two-photo{
+        height: 325px;
+        width: 325px;
+    }
+
+    .section-three-project-one-p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .section-one-main{
+        padding: 50px 50px;
+    }
+
+    .section-two-main{
+        padding: 50px 50px;
+    }
+
+    .section-three-main{
+        padding: 100px 50px;
+    }
+
+    .section-four-main{
+        padding: 100px 50px;
+    }
+
+    footer{
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .section-three-project-one{
+        padding: 25px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header{
+        padding: 30px 30px;
+    }
+    
+    .logo-header{
+        font-size: 30px;
+    }
+
+    .section-two-photo{
+        height: 300px;
+        width: 300px;
+    }
+
+    .input-name, .input-email{
+        width: 70%;
+    }
+
+    .input-message{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section-one-h1{
+        font-size: 35px;
+    }
+
+    .section-two-photo{
+        height: 250px;
+        width: 250px;
+    }
+
+    .section-three-project-one-p{
+        font-size: 16px;
+    }
+
+    .section-four-p{
+        font-size: 18px;
+    }
+}
