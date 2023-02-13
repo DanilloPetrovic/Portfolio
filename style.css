@@ -152,6 +152,18 @@ a{
     transform: scale(1.03);
 }
 
+.about-text-photo-responsive{
+    display: none;
+}
+
+.about-text-photo-responsive img{
+    margin-top: 50px;
+}
+
+.about-text-photo-responsive p{
+    margin-top: 50px;
+}
+
 /* Section three */
 
 .section-three-main{
@@ -327,6 +339,10 @@ footer{
 
 @media screen and (max-width: 1100px) {
     .about-text-photo{
+        display: none;
+    }
+
+    .about-text-photo-responsive{
         display: block;
     }
 
