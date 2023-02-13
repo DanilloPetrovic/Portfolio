@@ -55,32 +55,13 @@ contact_responsive_navbar.addEventListener('click', () => {
 
 // Functions for smooth loading
 
-let section_one_h1 = document.querySelector('.section-one-h1');
-let section_two_p = document.querySelector('.section-two-p');
-let section_two_photo = document.querySelector('.section-two-photo');
-let section_three_project_one = document.querySelector('.section-three-project-one');
+let header = document.querySelector('header');
+let main = document.querySelector('main');
+let footer = document.querySelector('footer');
 
-section_one_h1.classList.add('section-one-h1-fade');
-section_two_p.classList.add('section-two-p-fade');
-section_two_photo.classList.add('section-two-photo-fade');
-
-window.onscroll = () => {
-    let section_three_for_animation = document.querySelector('.section-three-main');
-    let section_three_for_animation_position = section_three_for_animation.getBoundingClientRect().top;
-    
-    let section_one_for_animation = document.querySelector('.section-one-main');
-    let section_one_for_animation_position = section_one_for_animation.getBoundingClientRect().top;
-
-    let screen_position = window.innerHeight;
-
-    if(screen_position <= section_one_for_animation_position){
-        section_two_p.classList.add('section-two-p-fade');
-    }
-
-    if(screen_position <= section_three_for_animation_position){
-        section_three_project_one.classList.add('section-three-project-one-fade');
-    }
-};
+header.classList.add('header-fade');
+main.classList.add('main-fade');
+footer.classList.add('footer-fade');
 
 // Function for contact
 
@@ -142,3 +123,9 @@ contact_button.addEventListener('click', () => {
         alert("Thank you for contact us!");
     }
 });
+
+// Function for reload
+
+window.onbeforeunload = () => {
+    window.scrollTo(0,0);
+};

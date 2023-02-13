@@ -28,6 +28,12 @@ header{
     align-items: end;
     box-shadow: 0px 0px 3px;
     color: grey;
+    opacity: 0;
+    transition: 2s;
+}
+
+.header-fade{
+    opacity: 1;
 }
 
 .logo-header{
@@ -95,6 +101,15 @@ a{
 
 /* Main */
 
+main{
+    opacity: 0;
+    transition: 2s;
+}
+
+.main-fade{
+    opacity: 1;;
+}
+
 /* Section One */
 
 .section-one-main{
@@ -105,12 +120,6 @@ a{
     font-family: OpenSans, serif;
     font-size: 65px;
     cursor: default;
-    opacity: 0;
-    transition: 1s;
-}
-
-.section-one-h1-fade{
-    opacity: 1;
 }
 
 /* Section Two */
@@ -186,12 +195,6 @@ a{
     padding: 50px;
     margin-top: 100px;
     border-radius: 10px;
-    transform: translateX(-200%);
-    transition: 2s;
-}
-
-.section-three-project-one-fade{
-    transform: translateX(0%);
 }
 
 .section-three-switch{
@@ -301,6 +304,12 @@ footer{
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 20px;
+    opacity: 0;
+    transition: 2s;
+}
+
+.footer-fade{
+    opacity: 1;
 }
 
 .footer-h1{
