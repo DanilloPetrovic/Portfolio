@@ -81,3 +81,64 @@ window.onscroll = () => {
         section_three_project_one.classList.add('section-three-project-one-fade');
     }
 };
+
+// Function for contact
+
+let contact_button = document.querySelector('.section-four-button');
+
+contact_button.addEventListener('click', () => {
+
+    let name_element = document.querySelector('.input-name');
+    let Email_element = document.querySelector('.input-email');
+    let message_element = document.querySelector('.input-message');
+
+    let name = document.querySelector('.input-name').value;
+    let Email = document.querySelector('.input-email').value;
+    let message = document.querySelector('.input-message').value;
+
+    let IndexAt = Email.indexOf("@"); // Uzimanje Indexa '@'
+    let PosleAt = Email.substring(IndexAt+1); // Uzimanje texta posle '@'
+    let IndexTacka = PosleAt.indexOf("."); // Uzimanje Indexa tacke posle '@'
+    let PreAt = Email.substring(0,IndexAt); // Uzimanje texta pre '@'
+    let DuzinaPreAt = PreAt.length; // Uzimanje duzine texta pre '@'
+    let IzmedjuAtTacka = Email.substring(IndexAt+1, DuzinaPreAt+IndexTacka+1); // Izimanje texta izmedju '@' i '.'
+    let PosleTacke = Email.substring(DuzinaPreAt+1+IndexTacka+1); // Uzimanje texta posle ','
+    let IndexTackePosleAt = DuzinaPreAt+IndexTacka+1; // Uzimanje indexa tacka posle '@' + DuzinaPreAt
+    let Obavestenje = document.querySelector('#obavestenje'); // Uzimanje p
+    let btnregister = document.querySelector('.registerbtn'); // Uzimanje register dugmeta
+
+    let valid_name = false;
+    let valid_email = false;
+    let valid_message = false;
+
+    if(name.length == 0){
+        name_element.style.border = '2px solid red';
+        alert("The name field must not be empty!");
+        let valid_name = false;
+    } else if(name.length > 0){
+        name_element.style.border = 'none';
+        valid_name = true;
+    }
+
+    if(Email.includes("@") && Email.includes(".") && (IzmedjuAtTacka === 'gmail' || IzmedjuAtTacka === 'hotmail') && PosleTacke === 'com' && PreAt.length > 4){
+        Email_element.style.border = "none";
+        valid_email = true;
+    } else{
+        Email_element.style.border = '2px solid red'
+        alert("Your email is not valid!");
+        let valid_email = false;
+    }
+
+    if(message.length == 0){
+        message_element.style.border = '2px solid red';
+        alert("The message field must not be empty!");
+        let valid_message = false;
+    } else if(message.length > 0){
+        message_element.style.border = 'none';
+        valid_message = true;
+    }
+
+    if(valid_name === true && valid_email === true && valid_message === true){
+        alert("Thank you for contact us!");
+    }
+});
