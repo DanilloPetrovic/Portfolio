@@ -221,7 +221,7 @@ a{
 .section-four-main{
     background-color: #28282A;
     padding: 100px;
-    padding-top: 80px;
+    padding-top: 50px;
     color: white;
 }
 
@@ -400,12 +400,28 @@ footer{
 }
 
 @media screen and (max-width: 720px) {
+    header{
+        padding: 30px 50px;
+    }
+
     .section-one-main{
         padding: 50px 50px;
     }
 
     .section-two-main{
         padding: 50px 50px;
+    }
+
+    .section-two-h2{
+        font-size: 35px;
+    }
+
+    .section-three-h2{
+        font-size: 35px;
+    }
+
+    .section-four-h2{
+        font-size: 35px;
     }
 
     .section-three-main{
@@ -417,7 +433,10 @@ footer{
     }
 
     footer{
-        padding: 100px 50px;
+        padding-top: 100px; 
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 25px;
     }
 }
 
@@ -437,6 +456,10 @@ footer{
         font-size: 30px;
     }
 
+    .section-one-h1{
+        font-size: 38px;
+    }
+
     .section-two-photo{
         height: 300px;
         width: 300px;
@@ -451,7 +474,40 @@ footer{
     }
 }
 
+@media screen and (max-width: 540px) {
+    header{
+        padding: 30px 25px;
+    }
+
+    .section-one-main{
+        padding: 50px 25px;
+    }
+
+    .section-two-main{
+        padding: 50px 25px;
+    }
+
+    .section-three-main{
+        padding: 100px 25px;
+    }
+
+    .section-four-main{
+        padding: 100px 25px;
+    }
+
+    footer{
+        padding-top: 100px; 
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+    }
+}
+
 @media screen and (max-width: 450px) {
+    .logo-header{
+        font-size: 25px;
+    }
+
     .section-one-h1{
         font-size: 35px;
     }
@@ -467,5 +523,61 @@ footer{
 
     .section-four-p{
         font-size: 18px;
+    }
+
+    .input-name{
+        font-size: 16px;
+    }
+
+    .input-email{
+        font-size: 16px;
+    }
+
+    .input-message{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400) {
+    .section-one-h1{
+        font-size: 20px;
+    }
+
+    .section-two-main{
+        padding-right: 10px;
+    }
+
+    .section-two-p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .section-two-photo{
+        height: 225px;
+        width: 225px;
+    }
+
+    .section-three-h3{
+        font-size: 22px;
+    }
+
+    .section-three-project-one-p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .logo-header{
+        font-size: 22px;
+    }
+
+    .section-one-h1{
+        font-size: 28px;
+    }
+
+    .section-two-photo{
+        height: 200px;
+        width: 200px;
     }
 }
