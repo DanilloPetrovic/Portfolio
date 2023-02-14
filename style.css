@@ -102,18 +102,20 @@ a{
 /* Main */
 
 main{
-    opacity: 0;
+    opacity: 1;
     transition: 2s;
-}
-
-.main-fade{
-    opacity: 1;;
 }
 
 /* Section One */
 
 .section-one-main{
     padding: 100px;
+    opacity: 0;
+    transition: 2s;
+}
+
+.section-one-main-fade{
+    opacity: 1;
 }
 
 .section-one-h1{
@@ -134,6 +136,12 @@ main{
     font-size: 45px;
     font-family: OpenSans, serif;
     cursor: default;
+    opacity: 0;
+    transition: 2s;
+}
+
+.section-two-h2-fade{
+    opacity: 1;
 }
 
 .about-text-photo{
@@ -145,6 +153,25 @@ main{
     width: 80%;
     margin-top: 30px;
     cursor: default;
+    opacity: 0;
+    transition: 2s;
+}
+
+.section-two-p-fade{
+    opacity: 1;
+}
+
+.section-two-p-responsive{
+    font-size: 22px;
+    width: 80%;
+    margin-top: 30px;
+    cursor: default;
+    opacity: 0;
+    transition: 2s;
+}
+
+.section-two-p-responsive-fade{
+    opacity: 1;
 }
 
 .section-two-photo{
@@ -154,7 +181,27 @@ main{
     border: 3px solid rgb(215, 215, 215);
     margin-top: 100px;
     cursor: default;
-    transition: 0.5s;
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-two-photo-fade{
+    opacity: 1;
+}
+
+.section-two-photo-responsive{
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+    border: 3px solid rgb(215, 215, 215);
+    margin-top: 100px;
+    cursor: default;
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-two-photo-responsive-fade{
+    opacity: 1;
 }
 
 .section-two-photo:hover{
@@ -186,6 +233,12 @@ main{
     font-size: 45px;
     font-family: OpenSans, serif;
     cursor: default;
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-three-h2-fade{
+    opacity: 1;
 }
 
 .section-three-project-one{
@@ -195,6 +248,12 @@ main{
     padding: 50px;
     margin-top: 100px;
     border-radius: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-three-project-one-fade{
+    opacity: 1;
 }
 
 .section-three-switch{
@@ -238,6 +297,7 @@ main{
     padding: 100px;
     padding-top: 50px;
     color: white;
+    opacity: 1;
 }
 
 .section-four-h2{
@@ -245,15 +305,33 @@ main{
     font-size: 45px;
     font-family: OpenSans, serif;
     cursor: default;
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-four-h2-fade{
+    opacity: 1;
 }
 
 .section-four-p{
     font-size: 22px;
     margin-top: 20px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-four-p-fade{
+    opacity: 1;
 }
 
 .section-four-inputs-div{
     margin-top: 50px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-four-inputs-div-fade{
+    opacity: 1;
 }
 
 .section-four-input-name-email{
@@ -306,6 +384,7 @@ footer{
     padding-bottom: 20px;
     opacity: 0;
     transition: 2s;
+    cursor: default;
 }
 
 .footer-fade{
@@ -340,7 +419,7 @@ footer{
         font-size: 55px;
     }
 
-    .section-two-photo{
+    .section-two-photo-responsive{
         height: 400px;
         width: 400px;
     }
@@ -384,7 +463,7 @@ footer{
         font-size: 50px;
     }
 
-    .section-two-p{
+    .section-two-p-responsive{
         width: 90%;
     }
 
@@ -414,7 +493,7 @@ footer{
         font-size: 45px;
     }
 
-    .section-two-photo{
+    .section-two-photo-responsive{
         height: 325px;
         width: 325px;
     }
@@ -485,7 +564,7 @@ footer{
         font-size: 38px;
     }
 
-    .section-two-photo{
+    .section-two-photo-responsive{
         height: 300px;
         width: 300px;
     }
@@ -537,7 +616,7 @@ footer{
         font-size: 35px;
     }
 
-    .section-two-photo{
+    .section-two-photo-responsive{
         height: 250px;
         width: 250px;
     }
@@ -572,13 +651,13 @@ footer{
         padding-right: 10px;
     }
 
-    .section-two-p{
+    .section-two-p-responsive{
         font-size: 15px;
     }
 }
 
 @media screen and (max-width: 340px) {
-    .section-two-photo{
+    .section-two-photo-responsive{
         height: 225px;
         width: 225px;
     }
@@ -601,7 +680,7 @@ footer{
         font-size: 28px;
     }
 
-    .section-two-photo{
+    .section-two-photo-responsive{
         height: 200px;
         width: 200px;
     }

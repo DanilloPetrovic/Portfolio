@@ -55,13 +55,71 @@ contact_responsive_navbar.addEventListener('click', () => {
 
 // Functions for smooth loading
 
+let about_text_photo_responsive = document.querySelector('.about-text-photo-responsive');
+
 let header = document.querySelector('header');
-let main = document.querySelector('main');
+let section_two_h2 = document.querySelector('.section-two-h2');
+let section_two_p = document.querySelector('.section-two-p');
+let section_two_photo = document.querySelector('.section-two-photo');
+let section_two_photo_responsive = document.querySelector('.section-two-photo-responsive');
+let section_one = document.querySelector('.section-one-main');
+let section_two = document.querySelector('.section-two-main');
 let footer = document.querySelector('footer');
 
 header.classList.add('header-fade');
-main.classList.add('main-fade');
+section_two_h2.classList.add('section-two-h2-fade');
+section_two_p.classList.add('section-two-p-fade');
+section_two_photo.classList.add('section-two-photo-fade');
+section_two_photo_responsive.classList.add('section-two-photo-responsive-fade');
+section_one.classList.add('section-one-main-fade');
+section_two.classList.add('section-two-main-fade');
 footer.classList.add('footer-fade');
+
+
+window.onscroll = () => {
+
+    let section_two_p_responsive = document.querySelector('.section-two-p-responsive');
+    let section_three_h2 = document.querySelector('.section-three-h2');
+    let section_three_project_one = document.querySelector('.section-three-project-one');
+    let section_four_h2 = document.querySelector('.section-four-h2');
+    let section_four_p = document.querySelector('.section-four-p');
+    let section_four_inputs_div = document.querySelector('.section-four-inputs-div');
+
+    let screen_height = window.innerHeight / 1.3;
+    let screen_height_faster = window.innerHeight;
+
+    let section_two_p_responsive_position = section_two_p_responsive.getBoundingClientRect().top;
+    let section_three_h2_position = section_three_h2.getBoundingClientRect().top;
+    let section_three_project_one_position = section_three_project_one.getBoundingClientRect().top;
+    let section_four_h2_position = section_four_h2.getBoundingClientRect().top;
+    let section_four_p_position = section_four_p.getBoundingClientRect().top;
+    let section_four_inputs_div_position = section_four_inputs_div.getBoundingClientRect().top;
+
+    if(screen_height > section_two_p_responsive_position){
+        section_two_p_responsive.classList.add('section-two-p-responsive-fade');
+    };
+
+    if(screen_height > section_three_h2_position){
+        section_three_h2.classList.add('section-three-h2-fade');
+    };
+
+    if(screen_height > section_three_project_one_position){
+        section_three_project_one.classList.add('section-three-project-one-fade');
+    };
+
+    if(screen_height_faster > section_four_h2_position){
+        section_four_h2.classList.add('section-four-h2-fade');
+    };
+
+    if(screen_height_faster > section_four_p_position){
+        section_four_p.classList.add('section-four-p-fade');
+    };
+
+    if(screen_height_faster > section_four_inputs_div_position){
+        section_four_inputs_div.classList.add('section-four-inputs-div-fade');
+    };
+};
+
 
 // Function for contact
 
